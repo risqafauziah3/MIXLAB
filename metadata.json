@@ -1,0 +1,6 @@
+{
+  "name": "MIXLAB - Concrete Mix Design, Analysis & Innovation Platform",
+  "description": "Smart Concrete Engineering Workspace untuk perancangan campuran beton SNI 7656 / SNI 03-2834, analisis laboratorium material, uji kuat tekan, evaluasi TOR kompetisi, inovasi material, dan asisten AI teknik sipil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

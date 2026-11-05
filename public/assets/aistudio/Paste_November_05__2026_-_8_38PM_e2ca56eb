@@ -1,0 +1,985 @@
+# MASTER PROMPT — MIXLAB
+## Concrete Mix Design, Analysis & Innovation Platform
+
+### 1. PROJECT OVERVIEW
+
+Buat sebuah aplikasi web bernama **MIXLAB (Concrete Mix Design, Analysis & Innovation Platform)**, yaitu platform digital terintegrasi di bidang teknologi beton yang membantu mahasiswa, dosen, peneliti, laboran, konsultan, dan praktisi teknik sipil dalam merancang campuran beton, menganalisis karakteristik material, memprediksi kuat tekan, mengevaluasi hasil pengujian, serta mengembangkan inovasi material beton berdasarkan standar dan penelitian ilmiah.
+
+MIXLAB tidak boleh hanya menjadi kalkulator beton atau chatbot biasa. Aplikasi harus berfungsi sebagai **engineering decision support system** yang mampu menghubungkan data material, perhitungan mix design, standar SNI, hasil penelitian, eksperimen, dan evaluasi performa beton.
+
+Tujuan utama aplikasi:
+1. Membantu pengguna membuat rancangan campuran beton berdasarkan metode yang dipilih.
+2. Menganalisis karakteristik material penyusun beton berdasarkan data laboratorium.
+3. Menghitung kebutuhan material secara terperinci.
+4. Mengevaluasi apakah rancangan campuran memenuhi persyaratan teknis.
+5. Membantu menganalisis dan memprediksi kuat tekan beton menggunakan model yang tervalidasi.
+6. Memberikan rekomendasi inovasi material berdasarkan jurnal ilmiah.
+7. Menganalisis TOR kompetisi beton secara otomatis dan memberikan rekomendasi strategi campuran.
+8. Menyediakan referensi SNI dan jurnal yang dapat ditelusuri.
+9. Membuat laporan perhitungan dan evaluasi dalam format PDF dan Excel.
+
+---
+
+### 2. DESAIN DAN IDENTITAS APLIKASI
+
+Nama: MIXLAB
+
+Kepanjangan: Concrete Mix Design, Analysis & Innovation Platform.
+
+Tagline: **Smart Concrete Engineering Workspace.**
+
+Target pengguna:
+- Mahasiswa Teknik Sipil.
+- Dosen dan peneliti.
+- Laboran pengujian beton.
+- Konsultan teknik sipil.
+- Praktisi konstruksi.
+- Peserta kompetisi beton.
+
+Konsep desain:
+- Modern, profesional, minimalis, dan berorientasi engineering.
+- Dominasi warna navy blue (#142D45).
+- Warna sekunder biru (#286B9B).
+- Background putih atau light grey.
+- Dashboard menggunakan sidebar navigation.
+- Responsive untuk laptop, tablet, dan smartphone.
+- Gunakan tabel teknik, grafik, diagram, dan visualisasi data.
+- Setiap hasil perhitungan harus mudah dibaca dan memiliki satuan yang jelas.
+
+Gunakan Bahasa Indonesia sebagai bahasa utama, dengan istilah teknis bahasa Inggris tetap diperbolehkan.
+
+---
+
+### 3. STRUKTUR MENU UTAMA
+
+Buat sidebar dengan menu berikut:
+
+**A. WORKSPACE**
+1. Dashboard
+2. My Projects
+3. TOR Competition Advisor
+
+**B. ENGINEERING TOOLS**
+4. Concrete Mix Design
+5. Material Laboratory
+6. Strength Predictor
+7. Concrete Testing & Evaluation
+8. Innovation Lab
+
+**C. KNOWLEDGE & OUTPUT**
+9. Research Center & Standards Library
+10. MIXLAB AI Assistant
+11. Reports & Export
+
+Setiap menu harus memiliki halaman dan fungsi yang benar-benar berjalan, bukan sekadar tampilan atau tombol dekoratif.
+
+---
+
+### 4. DASHBOARD
+
+Dashboard menjadi halaman utama yang menampilkan ringkasan aktivitas pengguna.
+
+Fitur:
+- Total project.
+- Total mix design.
+- Total data material.
+- Total benda uji.
+- Ringkasan hasil pengujian beton.
+- Grafik perkembangan kuat tekan.
+- Grafik perbandingan beberapa variasi campuran.
+- Daftar project terakhir.
+- Status setiap project.
+- Quick access menuju fitur utama.
+
+Tambahkan informasi status:
+- Design in Progress.
+- Waiting for Testing.
+- Testing Completed.
+- Needs Evaluation.
+- Completed.
+
+Seluruh data dashboard harus terhubung dengan data project yang tersimpan, bukan menggunakan angka demo yang seolah-olah merupakan data aktual.
+
+---
+
+### 5. MY PROJECTS
+
+Buat sistem pengelolaan proyek beton.
+
+Fitur:
+- Membuat project baru.
+- Mengubah nama project.
+- Menghapus project dengan konfirmasi.
+- Menyimpan parameter mix design.
+- Menyimpan data material.
+- Menyimpan hasil pengujian.
+- Menyimpan variasi inovasi.
+- Melihat riwayat perubahan project.
+- Membuka kembali project yang pernah dikerjakan.
+
+Setiap project harus mempunyai identitas dan data yang saling terhubung.
+
+Contoh project:
+- Beton Normal f'c 28 MPa.
+- Beton dengan Substitusi PET.
+- Beton dengan Serat Pelepah Pisang.
+- Beton dengan FABA.
+- Evaluasi Kuat Tekan Beton.
+
+---
+
+### 6. TOR COMPETITION ADVISOR
+
+Ini merupakan salah satu fitur unggulan MIXLAB.
+
+Buat fitur yang memungkinkan pengguna mengunggah TOR (Term of Reference) kompetisi beton dalam format:
+- PDF.
+- DOCX.
+- TXT.
+
+Sistem harus mampu membaca dokumen, mengekstrak teks, memahami persyaratan, kemudian menyusun rekomendasi teknis berdasarkan isi TOR.
+
+Jangan hanya menggunakan pencarian kata kunci sederhana. Gunakan pemrosesan dokumen dan AI untuk memahami konteks setiap persyaratan.
+
+#### A. TOR Document Analysis
+
+Identifikasi informasi berikut:
+
+1. Tema kompetisi.
+2. Target kuat tekan beton.
+3. Jenis beton yang diminta.
+4. Nilai slump.
+5. Ukuran maksimum agregat.
+6. Jenis dan sumber material yang diperbolehkan.
+7. Ketentuan penggunaan bahan tambah.
+8. Ketentuan inovasi material.
+9. Dimensi benda uji.
+10. Jumlah benda uji.
+11. Umur pengujian.
+12. Standar pengujian.
+13. Persyaratan durabilitas.
+14. Batas biaya atau anggaran.
+15. Kriteria dan bobot penilaian.
+16. Ketentuan khusus dan larangan.
+17. Jadwal pelaksanaan kompetisi.
+
+Pisahkan informasi menjadi:
+- Persyaratan eksplisit dalam TOR.
+- Informasi yang disimpulkan dari konteks.
+- Informasi yang belum ditemukan.
+- Hal yang harus dikonfirmasi kepada panitia.
+
+Jangan mengarang persyaratan yang tidak tertulis dalam dokumen.
+
+#### B. Automatic Mix Design Recommendation
+
+Setelah TOR dianalisis, berikan rekomendasi:
+
+1. Metode mix design yang paling sesuai.
+2. Standar SNI yang relevan.
+3. Parameter desain yang harus digunakan.
+4. Karakteristik material yang diperlukan.
+5. Alternatif material inovasi.
+6. Strategi peningkatan kuat tekan.
+7. Strategi mempertahankan workability.
+8. Variasi campuran yang direkomendasikan.
+9. Rencana pengujian laboratorium.
+10. Jumlah benda uji berdasarkan kebutuhan TOR.
+
+Berikan alasan teknis untuk setiap rekomendasi.
+
+#### C. Mix Design Variations
+
+Buat beberapa alternatif campuran:
+
+- Mix 0: Beton kontrol tanpa inovasi.
+- Mix 1: Inovasi dengan variasi dosis rendah.
+- Mix 2: Inovasi dengan variasi dosis menengah.
+- Mix 3: Inovasi dengan variasi dosis lebih tinggi atau kombinasi material.
+
+Dosis tidak boleh dibuat secara sembarang. Rentang dosis harus didasarkan pada penelitian ilmiah yang relevan, karakteristik material, dan hasil trial mix.
+
+Tampilkan tabel perbandingan:
+- Jenis campuran.
+- Jenis inovasi.
+- Persentase substitusi atau dosis.
+- Prediksi pengaruh terhadap workability.
+- Prediksi pengaruh terhadap kuat tekan.
+- Potensi kelebihan.
+- Potensi kekurangan.
+- Referensi penelitian pendukung.
+
+Tandai angka yang masih berupa rekomendasi penelitian dan belum dibuktikan melalui pengujian.
+
+#### D. SNI Recommendation
+
+Sistem harus memilih standar yang relevan berdasarkan jenis beton, metode perancangan, bentuk benda uji, dan jenis pengujian.
+
+Contoh referensi awal:
+- SNI 7656:2012.
+- SNI 03-2834-2000.
+- SNI 1974:2011.
+- SNI 2493:2011.
+
+Jangan otomatis menampilkan semua standar untuk setiap project. Jelaskan alasan pemilihannya dan verifikasi edisi serta status keberlakuannya melalui sumber resmi BSN.
+
+#### E. Journal Recommendation
+
+Sistem harus dapat mencari jurnal ilmiah berdasarkan inovasi dan tujuan kompetisi.
+
+Tampilkan:
+- Judul penelitian.
+- Nama penulis.
+- Tahun publikasi.
+- Nama jurnal.
+- DOI.
+- Link artikel.
+- Jenis material.
+- Persentase penggunaan material.
+- Metode penelitian.
+- Hasil kuat tekan.
+- Hasil pengujian lainnya.
+- Kesimpulan.
+- Relevansi terhadap TOR.
+
+Prioritaskan jurnal ilmiah yang relevan dan dapat diverifikasi.
+
+Jangan membuat judul, DOI, penulis, atau hasil penelitian fiktif.
+
+#### F. Transfer to Mix Design
+
+Setelah rekomendasi selesai, sediakan tombol:
+
+**Use Recommendation in Mix Design**
+
+Tombol tersebut memindahkan parameter yang berhasil diekstrak dari TOR ke halaman Concrete Mix Design.
+
+Parameter yang dipindahkan:
+- Target kuat tekan.
+- Slump.
+- Ukuran agregat.
+- Jenis beton.
+- Metode perancangan.
+- Ketentuan inovasi.
+- Volume atau kebutuhan benda uji jika tersedia.
+
+Pengguna tetap dapat memeriksa dan mengubah parameter sebelum melakukan perhitungan.
+
+---
+
+### 7. CONCRETE MIX DESIGN
+
+Buat modul perancangan campuran beton yang menjadi fitur utama MIXLAB.
+
+Metode yang harus tersedia:
+1. SNI 7656:2012.
+2. SNI 03-2834-2000.
+3. ACI 211.1 sebagai metode tambahan.
+
+Setiap metode harus mempunyai algoritma dan prosedur perhitungan masing-masing. Jangan mencampur tabel, rumus, atau tahapan dari metode yang berbeda.
+
+#### A. Project Parameters
+
+Input:
+- Nama project.
+- Metode perancangan.
+- Jenis beton.
+- Target kuat tekan f'c (MPa).
+- Slump (mm).
+- Ukuran maksimum agregat (mm).
+- Umur beton rencana.
+- Volume beton (m³).
+- Kondisi paparan lingkungan.
+- Kebutuhan durabilitas.
+- Kadar udara apabila relevan.
+
+#### B. Cement Properties
+
+Input:
+- Jenis semen.
+- Berat jenis semen.
+- Kelas atau tipe semen.
+- Material tambahan pada binder.
+- Persentase substitusi semen.
+
+#### C. Fine Aggregate Properties
+
+Input:
+- Berat jenis.
+- Berat jenis SSD.
+- Berat jenis semu jika tersedia.
+- Penyerapan air (%).
+- Kadar air (%).
+- Modulus kehalusan.
+- Berat isi.
+- Data analisis saringan.
+
+#### D. Coarse Aggregate Properties
+
+Input:
+- Jenis agregat kasar.
+- Berat jenis.
+- Berat jenis SSD.
+- Penyerapan air (%).
+- Kadar air (%).
+- Berat isi kering padat.
+- Ukuran maksimum agregat.
+- Data analisis saringan.
+- Bentuk dan karakteristik agregat jika tersedia.
+
+#### E. Admixture Properties
+
+Input:
+- Jenis admixture.
+- Nama produk.
+- Berat jenis.
+- Dosis penggunaan.
+- Fungsi admixture.
+
+#### F. Automatic Calculation
+
+Sistem harus menghitung komposisi campuran berdasarkan metode yang dipilih.
+
+Output minimal:
+
+1. Kebutuhan air (kg/m³).
+2. Faktor air-semen (FAS atau w/c).
+3. Kebutuhan semen (kg/m³).
+4. Kebutuhan agregat halus (kg/m³).
+5. Kebutuhan agregat kasar (kg/m³).
+6. Kadar udara (%).
+7. Kebutuhan admixture (kg/m³).
+8. Total berat campuran (kg/m³).
+9. Rasio campuran.
+10. Volume absolut setiap material.
+
+#### G. Aggregate Moisture Correction
+
+Buat perhitungan koreksi kadar air agregat secara otomatis.
+
+Tampilkan:
+- Berat agregat SSD.
+- Berat agregat kering oven.
+- Kadar air aktual.
+- Penyerapan agregat.
+- Berat agregat basah yang harus ditimbang.
+- Koreksi air dari agregat.
+- Air yang harus ditambahkan ke mixer.
+
+Gunakan persamaan yang benar dan konsisten dengan basis berat yang digunakan.
+
+Jelaskan tanda positif dan negatif pada koreksi air agar pengguna memahami apakah agregat menambah atau menyerap air pencampur.
+
+#### H. Final Mix Composition
+
+Tampilkan tabel:
+
+| Material | Per 1 m³ | Total kebutuhan |
+|---|---:|---:|
+| Air | kg | kg |
+| Semen | kg | kg |
+| Pasir | kg | kg |
+| Kerikil | kg | kg |
+| Admixture | kg | kg |
+| Material inovasi | kg | kg |
+
+Total kebutuhan harus otomatis menyesuaikan volume beton yang dimasukkan.
+
+Tambahkan:
+- Rasio campuran.
+- Jumlah kebutuhan material.
+- Kebutuhan material untuk setiap benda uji.
+- Jumlah benda uji yang direncanakan.
+- Faktor kehilangan material apabila diaktifkan pengguna.
+
+#### I. Detailed Calculation
+
+Jangan hanya menampilkan hasil akhir.
+
+Tampilkan perhitungan langkah demi langkah:
+
+- Rumus.
+- Substitusi angka.
+- Hasil perhitungan.
+- Satuan.
+- Keterangan variabel.
+
+Gunakan format persamaan yang mudah dibaca, bukan seluruh rumus dalam satu baris panjang.
+
+#### J. Engineering Justification
+
+Setiap parameter perhitungan harus memiliki bagian yang dapat dibuka bernama:
+
+**Engineering Justification & References**
+
+Isi:
+1. Dasar pemilihan nilai.
+2. Rumus yang digunakan.
+3. Proses perhitungan.
+4. Dasar standar SNI.
+5. Nomor klausul, tabel, dan halaman jika sudah diverifikasi.
+6. Jurnal pendukung jika relevan.
+7. Penjelasan teknis.
+8. Asumsi dan batasan.
+9. Status verifikasi referensi.
+
+Gunakan status:
+- Verified.
+- Needs Review.
+- Not Available.
+
+Jangan mengarang nomor tabel, halaman, klausul, atau persamaan standar.
+
+---
+
+### 8. MATERIAL LABORATORY
+
+Buat modul untuk menginput, menyimpan, dan menganalisis karakteristik material.
+
+#### A. Input Data
+
+Pengguna dapat:
+- Mengisi data secara manual.
+- Mengunggah Excel.
+- Mengunggah CSV.
+- Mengunggah dokumen hasil pengujian.
+- Mengelola beberapa sampel material.
+
+#### B. Pengujian Agregat
+
+Sediakan modul:
+1. Analisis saringan agregat halus.
+2. Analisis saringan agregat kasar.
+3. Berat jenis dan penyerapan agregat.
+4. Kadar air agregat.
+5. Berat isi agregat.
+6. Keausan agregat dengan mesin Los Angeles.
+7. Pengujian material lain yang relevan.
+
+#### C. Automatic Analysis
+
+Sistem dapat:
+- Menghitung persentase tertahan.
+- Menghitung tertahan kumulatif.
+- Menghitung persentase lolos.
+- Menghitung modulus kehalusan.
+- Membuat grafik gradasi.
+- Membandingkan gradasi dengan batas yang berlaku.
+- Menampilkan hasil memenuhi atau tidak memenuhi persyaratan.
+
+Setiap pemeriksaan harus menyebutkan standar dan batas yang digunakan.
+
+Jangan menyatakan material memenuhi standar jika data pengujian atau kriteria pembanding belum lengkap.
+
+#### D. Material Database
+
+Simpan karakteristik setiap material dan hubungkan dengan project mix design.
+
+---
+
+### 9. STRENGTH PREDICTOR
+
+Buat modul prediksi kuat tekan beton berdasarkan data eksperimen.
+
+Sistem harus mendukung model machine learning seperti:
+- Linear Regression.
+- Random Forest Regression.
+- XGBoost.
+- Model lain yang sesuai dengan dataset.
+
+Input model:
+- Kadar semen.
+- Kadar air.
+- Agregat halus.
+- Agregat kasar.
+- Fly ash atau SCM.
+- Admixture.
+- Material inovasi.
+- Faktor air-semen.
+- Umur beton.
+- Kondisi curing.
+- Parameter relevan lainnya.
+
+Output:
+- Prediksi kuat tekan.
+- Grafik prediksi berdasarkan umur.
+- Perbandingan target dengan hasil prediksi.
+- Perbandingan beberapa variasi campuran.
+- Tingkat ketidakpastian jika tersedia.
+
+#### Model Validation
+
+Tampilkan:
+- Dataset yang digunakan.
+- Jumlah data.
+- Metode pembagian data.
+- MAE.
+- RMSE.
+- R².
+- Cross-validation.
+- Batas penggunaan model.
+
+Jangan menampilkan angka prediksi apabila model belum dilatih atau belum divalidasi.
+
+Bedakan secara tegas:
+- Calculated: hasil perhitungan.
+- Predicted: hasil model prediksi.
+- Experimental: hasil pengujian laboratorium.
+
+Prediksi tidak boleh dianggap sebagai hasil uji aktual.
+
+---
+
+### 10. CONCRETE TESTING & EVALUATION
+
+Buat modul pencatatan dan analisis pengujian beton.
+
+Jenis pengujian:
+- Kuat tekan.
+- Kuat tarik belah.
+- Kuat lentur.
+- Pengujian slump.
+- Berat isi beton.
+- Pengujian durabilitas jika tersedia.
+
+#### A. Input Testing Data
+
+Pengguna dapat mengisi:
+- Kode benda uji.
+- Jenis benda uji.
+- Dimensi aktual.
+- Berat benda uji.
+- Umur beton.
+- Beban maksimum.
+- Hasil pengujian.
+- Tanggal pengujian.
+- Kondisi benda uji.
+- Keterangan laboratorium.
+
+#### B. Automatic Calculation
+
+Untuk kuat tekan, hitung berdasarkan beban maksimum dan luas penampang aktual.
+
+Tampilkan:
+- Luas penampang.
+- Beban maksimum.
+- Kuat tekan dalam MPa.
+- Umur pengujian.
+- Hasil setiap benda uji.
+- Nilai rata-rata.
+- Nilai minimum dan maksimum.
+- Standar pengujian yang relevan.
+
+#### C. Strength Development
+
+Buat grafik perkembangan kuat tekan:
+- 3 hari.
+- 7 hari.
+- 14 hari.
+- 28 hari.
+- Umur lainnya sesuai data.
+
+Grafik harus menggunakan data aktual yang diinput pengguna.
+
+#### D. Evaluation
+
+Bandingkan hasil pengujian dengan:
+- Target mutu.
+- Beton kontrol.
+- Variasi campuran.
+- Hasil penelitian yang relevan.
+
+Tampilkan apakah hasil memenuhi target dan berikan analisis teknis berdasarkan data yang tersedia.
+
+Jangan mengasumsikan hubungan perkembangan kuat tekan yang tidak didukung data.
+
+---
+
+### 11. INNOVATION LAB
+
+Fitur ini memungkinkan pengguna mengeksplorasi berbagai inovasi material beton.
+
+Jangan membatasi inovasi hanya pada serat.
+
+Sistem harus menerima material inovasi apa pun yang dimasukkan pengguna.
+
+Contoh:
+- Serat pelepah pisang.
+- Serat bambu.
+- Serat kelapa.
+- Serat sintetis.
+- Plastik PET.
+- Fly ash.
+- FABA.
+- Silica fume.
+- Ground granulated blast furnace slag.
+- Recycled aggregate.
+- Recycled glass.
+- Limbah industri.
+- Material alternatif lainnya.
+
+#### A. Innovation Input
+
+Input:
+- Nama material.
+- Jenis material.
+- Sumber material.
+- Fungsi dalam campuran.
+- Sebagai substitusi semen.
+- Sebagai substitusi agregat.
+- Sebagai bahan tambah.
+- Sebagai serat.
+- Persentase penggunaan.
+- Karakteristik material.
+- Perlakuan awal.
+
+#### B. Research-Based Recommendation
+
+Setelah pengguna memasukkan material, sistem mencari penelitian ilmiah yang relevan.
+
+Tampilkan:
+1. Penelitian terkait.
+2. Karakteristik material.
+3. Rentang dosis yang diteliti.
+4. Pengaruh terhadap workability.
+5. Pengaruh terhadap kuat tekan.
+6. Pengaruh terhadap kuat tarik.
+7. Pengaruh terhadap durabilitas.
+8. Kelebihan dan kekurangan.
+9. Rekomendasi variasi eksperimen.
+10. Standar pengujian yang relevan.
+
+#### C. Mix Innovation Comparison
+
+Buat tabel perbandingan:
+- Beton kontrol.
+- Inovasi variasi 1.
+- Inovasi variasi 2.
+- Inovasi variasi 3.
+
+Tampilkan komposisi, dosis, hasil pengujian, dan perubahan performa.
+
+Angka dosis dari jurnal harus dibedakan dari angka yang telah diuji pada project pengguna.
+
+---
+
+### 12. RESEARCH CENTER & STANDARDS LIBRARY
+
+Buat pusat referensi yang menghubungkan standar teknis dan jurnal ilmiah.
+
+#### A. Standards Library
+
+Sediakan pencarian standar berdasarkan:
+- Perancangan campuran beton.
+- Pengujian agregat.
+- Pengujian semen.
+- Pengujian beton segar.
+- Pengujian beton keras.
+- Pengujian durabilitas.
+- Pengujian material inovasi.
+
+Sumber utama standar:
+- Badan Standardisasi Nasional (BSN).
+- Dokumen standar resmi yang dapat diakses secara sah.
+
+Setiap standar harus menampilkan:
+- Nomor standar.
+- Judul resmi.
+- Tahun.
+- Status keberlakuan.
+- Ruang lingkup.
+- Kegunaan dalam project.
+- Link sumber resmi.
+
+#### B. Journal Database
+
+Integrasikan sumber metadata ilmiah seperti:
+- Crossref.
+- OpenAlex.
+- Semantic Scholar.
+- DOAJ.
+- Repositori institusi.
+- Penerbit jurnal.
+
+Fitur:
+- Pencarian berdasarkan kata kunci.
+- Filter tahun.
+- Filter jenis material.
+- Filter topik penelitian.
+- Pencarian DOI.
+- Ringkasan abstrak.
+- Link artikel asli.
+- Pengelompokan jurnal berdasarkan relevansi.
+
+Utamakan sumber yang dapat diverifikasi. Bedakan artikel open access dengan artikel yang memerlukan akses berlangganan.
+
+---
+
+### 13. MIXLAB AI ASSISTANT
+
+Buat chatbot AI yang terintegrasi dengan seluruh modul MIXLAB.
+
+Chatbot harus dapat memahami konteks project yang sedang dibuka.
+
+Kemampuan:
+
+1. Menjelaskan proses mix design.
+2. Menjelaskan setiap rumus perhitungan.
+3. Membantu menganalisis data material.
+4. Menjelaskan hasil pengujian.
+5. Menganalisis penyebab kuat tekan tidak mencapai target.
+6. Membandingkan variasi campuran.
+7. Memberikan rekomendasi inovasi.
+8. Mencari jurnal yang relevan.
+9. Menjelaskan standar SNI.
+10. Menganalisis dokumen TOR.
+11. Memberikan saran eksperimen lanjutan.
+12. Membantu menyusun laporan teknis.
+
+Contoh pertanyaan pengguna:
+
+- Mengapa kuat tekan beton saya hanya mencapai 22 MPa, padahal targetnya 28 MPa?
+- Bagaimana cara meningkatkan kuat tekan beton tanpa mengurangi workability?
+- Apakah PET lebih tepat digunakan sebagai substitusi agregat atau bahan tambah?
+- Berapa variasi campuran yang sebaiknya dibuat?
+- Apa standar SNI yang sesuai untuk pengujian ini?
+- Mengapa hasil mix design berbeda setelah koreksi kadar air agregat?
+
+AI harus menjawab berdasarkan data project, standar yang relevan, dan referensi yang benar-benar ditemukan.
+
+Jika sumber belum tersedia, AI harus menyatakan keterbatasannya dan tidak membuat referensi palsu.
+
+---
+
+### 14. REPORTS & EXPORT
+
+Buat fitur pembuatan laporan otomatis berdasarkan data project.
+
+Jenis laporan:
+1. Laporan mix design.
+2. Laporan karakteristik material.
+3. Laporan hasil pengujian.
+4. Laporan analisis kuat tekan.
+5. Laporan inovasi material.
+6. Laporan analisis TOR kompetisi.
+7. Laporan perbandingan variasi campuran.
+
+#### PDF Report
+
+Isi laporan:
+- Cover project.
+- Identitas project.
+- Tujuan perancangan.
+- Metode yang digunakan.
+- Data material.
+- Parameter perancangan.
+- Perhitungan detail.
+- Tabel komposisi.
+- Koreksi kadar air.
+- Grafik.
+- Hasil pengujian.
+- Analisis.
+- Justifikasi SNI.
+- Referensi jurnal.
+- Kesimpulan.
+
+#### Excel Export
+
+Sediakan workbook dengan sheet terpisah:
+1. Project Information.
+2. Material Properties.
+3. Mix Design Input.
+4. Mix Design Calculation.
+5. Moisture Correction.
+6. Final Mix Composition.
+7. Testing Results.
+8. Strength Analysis.
+9. Innovation Comparison.
+10. References.
+
+Rumus Excel harus dapat diperiksa dan diedit pengguna.
+
+---
+
+### 15. DATABASE & SYSTEM ARCHITECTURE
+
+Gunakan arsitektur aplikasi yang dapat dikembangkan menjadi sistem produksi.
+
+Rekomendasi teknologi:
+
+Frontend:
+- React atau Next.js.
+- TypeScript.
+- Tailwind CSS.
+- Chart.js atau Recharts.
+
+Backend:
+- Python FastAPI atau Node.js.
+- REST API.
+- Service khusus perhitungan engineering.
+- Service untuk AI dan pencarian referensi.
+
+Database:
+- PostgreSQL.
+- Supabase dapat digunakan untuk autentikasi dan database jika sesuai.
+
+File storage:
+- PDF.
+- DOCX.
+- Excel.
+- CSV.
+- Gambar hasil pengujian.
+
+Machine learning:
+- Python.
+- Scikit-learn.
+- XGBoost jika diperlukan.
+
+Integrasi eksternal:
+- API model AI.
+- Crossref API.
+- OpenAlex API.
+- Semantic Scholar API.
+- Sumber resmi BSN.
+
+Buat database relasional untuk:
+- Users.
+- Projects.
+- Materials.
+- Material Tests.
+- Mix Designs.
+- Mix Design Variants.
+- Specimens.
+- Testing Results.
+- Innovations.
+- Research References.
+- Standards.
+- TOR Documents.
+- AI Conversation History.
+- Reports.
+
+Setiap project harus memiliki relasi yang konsisten antara data input, perhitungan, pengujian, dan laporan.
+
+---
+
+### 16. ENGINEERING ACCURACY & DATA INTEGRITY
+
+Bagian ini wajib menjadi prinsip utama seluruh aplikasi.
+
+1. Semua rumus harus sesuai dengan metode yang dipilih.
+2. Jangan mencampur prosedur SNI 7656:2012 dan SNI 03-2834-2000.
+3. Setiap angka harus memiliki satuan.
+4. Setiap perhitungan harus dapat ditelusuri.
+5. Setiap referensi harus dapat diverifikasi.
+6. Jangan mengarang nomor tabel, klausul, halaman, DOI, atau hasil jurnal.
+7. Jangan menyatakan beton memenuhi standar tanpa memeriksa seluruh persyaratan yang relevan.
+8. Jangan menyamakan hasil prediksi dengan hasil eksperimen.
+9. Jangan menggunakan angka contoh sebagai data aktual.
+10. Berikan peringatan jika input tidak lengkap atau tidak masuk akal.
+11. Berikan validasi terhadap konsistensi volume dan massa.
+12. Tampilkan asumsi yang digunakan dalam setiap perhitungan.
+13. Material inovasi harus dievaluasi berdasarkan karakteristiknya, bukan diasumsikan memiliki perilaku yang sama dengan material konvensional.
+14. Standar SNI menjadi dasar persyaratan normatif, sedangkan jurnal digunakan sebagai dukungan empiris dan pengembangan inovasi.
+15. Rekomendasi yang belum dibuktikan melalui trial mix harus diberi label sebagai rekomendasi awal.
+
+Jika dokumen standar tidak dapat diakses, tandai referensi sebagai Needs Review dan jangan mengarang isi dokumennya.
+
+---
+
+### 17. FUNCTIONAL REQUIREMENTS
+
+Pastikan seluruh fitur benar-benar berfungsi.
+
+Wajib tersedia:
+- Navigasi antarmenu.
+- Input data.
+- Validasi input.
+- Upload dokumen.
+- Pembacaan PDF dan DOCX.
+- Penyimpanan project.
+- Edit dan hapus data.
+- Perhitungan mix design.
+- Koreksi kadar air.
+- Visualisasi grafik.
+- Perbandingan variasi.
+- Pencarian jurnal.
+- AI Assistant.
+- Export PDF.
+- Export Excel.
+- Riwayat project.
+
+Jangan membuat tombol yang hanya memberikan notifikasi tanpa menjalankan fungsi sebenarnya.
+
+Jika suatu fitur belum terhubung ke backend atau API, beri label **Planned**, **Demo**, atau **Not Connected**. Jangan menyebut fitur tersebut sudah berfungsi.
+
+---
+
+### 18. DEVELOPMENT PRIORITIES
+
+Kembangkan aplikasi secara bertahap dengan prioritas berikut.
+
+**Tahap 1 — Core Engineering**
+- Dashboard.
+- My Projects.
+- Database.
+- Material Laboratory.
+- Concrete Mix Design.
+- Koreksi kadar air.
+- Detailed calculation.
+- PDF dan Excel report.
+
+**Tahap 2 — Testing & Analysis**
+- Concrete Testing.
+- Strength Development.
+- Strength Predictor.
+- Perbandingan variasi campuran.
+
+**Tahap 3 — Research & Innovation**
+- Innovation Lab.
+- Research Center.
+- SNI Library.
+- Journal Search.
+- Engineering Justification.
+
+**Tahap 4 — Intelligent Features**
+- TOR Competition Advisor.
+- PDF/DOCX extraction.
+- AI Assistant.
+- Automatic recommendation.
+- Integrasi AI dengan seluruh data project.
+
+Jangan melompat ke fitur AI yang kompleks sebelum perhitungan inti dan struktur data sudah berjalan dengan benar.
+
+---
+
+### 19. FINAL INSTRUCTIONS
+
+Bangun MIXLAB sebagai aplikasi web yang profesional, lengkap, interaktif, dan benar-benar dapat digunakan untuk mendukung pekerjaan teknik beton.
+
+Jangan hanya menghasilkan mockup, landing page, atau desain dashboard.
+
+Prioritaskan:
+1. Fungsi nyata.
+2. Akurasi perhitungan teknik.
+3. Integrasi data antarmodul.
+4. Keterlacakan standar dan jurnal.
+5. Kemudahan penggunaan.
+6. Visualisasi hasil.
+7. Keamanan dan pengelolaan data.
+
+Sebelum menyatakan aplikasi selesai:
+- Uji setiap tombol.
+- Uji seluruh form.
+- Uji perhitungan menggunakan contoh yang dapat diverifikasi secara manual.
+- Uji koreksi kadar air.
+- Uji penyimpanan dan pemanggilan kembali project.
+- Uji upload dokumen.
+- Uji export PDF dan Excel.
+- Uji responsivitas tampilan.
+- Periksa apakah setiap referensi benar-benar tersedia.
+
+**OUTPUT YANG DIHARAPKAN:**
+
+Sebuah aplikasi web bernama MIXLAB yang menjadi pusat kerja teknik beton, mulai dari input karakteristik material, perancangan campuran berdasarkan SNI, evaluasi hasil pengujian, pengembangan inovasi material, pencarian jurnal ilmiah, hingga analisis TOR kompetisi beton secara terintegrasi.
+
+Bangun sistem yang dapat dikembangkan lebih lanjut, bukan sekadar prototype visual.
